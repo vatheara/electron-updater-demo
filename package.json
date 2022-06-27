@@ -1,0 +1,32 @@
+{
+  "name": "electron-updater-demo",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "electron.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vatheara/electron-updater-demo"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder --macos"
+  },
+  "build": {
+    "appId": "demo.id",
+    "mac": {
+      "publish":["github"],
+      "category": "demo.app.category.type"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-is-dev": "^2.0.0",
+    "electron-updater": "^5.0.5"
+  },
+  "devDependencies": {
+    "electron": "^19.0.6",
+    "electron-builder": "^23.1.0"
+  }
+}
